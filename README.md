@@ -1,40 +1,21 @@
 README.md
 
-#Usage
-
-    from IPScraper import IPScraper
-
-#Initialize client connection using selected APIs
-
-    go = IPScraper()
-
 #Setting API keys
-
+You need to have set the API keys correctly.  Onyphe and etintel seems to require some payment. Greynoise has a 14 day trial that can be used
     etintel_api_key: str = 'your emerging threats intelligence api key'
     greynoise_api_key: str = 'your greynoise community api key'
     onyphe_api_key: str = 'apikey your onyphe api key'
     shodan_api_key: str = 'your shodan api key'
     virustotal_api_key: str = 'your virustotal api key'
 
-#Modules within findip can be commented out if you don't have an API key or don't wish to utilize them. Add # to beginning of these lines as needed:
+#Usage
 
-    self.etintel(ip)
-    self.greynoise(ip)
-    self.onyphe(ip)              
-    self.goShodan(ip)
-    self.virustotal(ip)  
-
-
-#Get details on a specific IP address
-
-    go.findip('58.216.151.245')
+    main.py
 
 #Sample Output
 
-    58.216.151.245 found in ET Intel - Events
-    58.216.151.245 found in ET Intel - Geolocation
+    Enter the IP:- 58.216.151.245
     58.216.151.245 found in GreyNoise
-    58.216.151.245 found in Onyphe - Threat List
     58.216.151.245 found in Shodan
     58.216.151.245 found in VirusTotal - Historical Whois
-    Results written to 58.216.151.245_20220422_143656.csv
+    Results written to 58.216.151.245_20220424_140443.csv
